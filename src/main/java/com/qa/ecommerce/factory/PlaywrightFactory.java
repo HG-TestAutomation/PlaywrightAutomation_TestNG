@@ -21,6 +21,9 @@ public class PlaywrightFactory {
 	Page page;	
 	Properties prop;
 	
+	
+	
+	
 	private static ThreadLocal<Browser> tlBrowser = new ThreadLocal<>();
 	private static ThreadLocal<BrowserContext> tlBrowserContext = new ThreadLocal<>();
 	private static ThreadLocal<Page> tlPage = new ThreadLocal<>();
@@ -102,4 +105,7 @@ public class PlaywrightFactory {
 		return base64Path;
 	
 }
+
+	
+	
 }

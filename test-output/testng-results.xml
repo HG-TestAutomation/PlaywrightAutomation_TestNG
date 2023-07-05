@@ -1,83 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="16" passed="15" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-01T18:30:04 EDT" name="E-Commerce Test Regression Playwright Suite" finished-at="2023-07-01T18:30:15 EDT" duration-ms="10810">
+  <suite started-at="2023-07-05T12:46:53 EDT" name="E-Commerce Test Regression Playwright Suite" finished-at="2023-07-05T12:47:23 EDT" duration-ms="29871">
     <groups>
     </groups>
-    <test started-at="2023-07-01T18:30:04 EDT" name="E-Commerce Home Page Test" finished-at="2023-07-01T18:30:14 EDT" duration-ms="10064">
-      <class name="com.qa.ecommerce.tests.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-01T18:30:04 EDT" name="setup" finished-at="2023-07-01T18:30:12 EDT" duration-ms="7592" status="PASS">
+    <test started-at="2023-07-05T12:46:53 EDT" name="E-Commerce Login Page Test_edge" finished-at="2023-07-05T12:47:04 EDT" duration-ms="11242">
+      <class name="com.qa.ecommerce.tests.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.LoginPageTest@7164ca4c]" started-at="2023-07-05T12:46:53 EDT" name="setup" finished-at="2023-07-05T12:47:02 EDT" duration-ms="9287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-01T18:30:12 EDT" name="homePageTitleTest" finished-at="2023-07-01T18:30:12 EDT" duration-ms="15" status="PASS">
+        <test-method signature="loginPageNavigationTest()[pri:1, instance:com.qa.ecommerce.tests.LoginPageTest@7164ca4c]" started-at="2023-07-05T12:47:02 EDT" name="loginPageNavigationTest" finished-at="2023-07-05T12:47:03 EDT" duration-ms="659" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePageTitleTest -->
-        <test-method signature="homePageUrlTest()[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-01T18:30:12 EDT" name="homePageUrlTest" finished-at="2023-07-01T18:30:12 EDT" duration-ms="2" status="PASS">
+        </test-method> <!-- loginPageNavigationTest -->
+        <test-method signature="forgotPwdLinkExistTest()[pri:2, instance:com.qa.ecommerce.tests.LoginPageTest@7164ca4c]" started-at="2023-07-05T12:47:03 EDT" name="forgotPwdLinkExistTest" finished-at="2023-07-05T12:47:03 EDT" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePageUrlTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-01T18:30:12 EDT" name="searchTest" data-provider="getProductData" finished-at="2023-07-01T18:30:13 EDT" duration-ms="745" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[beanie]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- forgotPwdLinkExistTest -->
+        <test-method signature="appLoginTest()[pri:3, instance:com.qa.ecommerce.tests.LoginPageTest@7164ca4c]" started-at="2023-07-05T12:47:03 EDT" name="appLoginTest" finished-at="2023-07-05T12:47:04 EDT" duration-ms="1177" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-01T18:30:13 EDT" name="searchTest" data-provider="getProductData" finished-at="2023-07-01T18:30:13 EDT" duration-ms="749" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[logo]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-01T18:30:13 EDT" name="searchTest" data-provider="getProductData" finished-at="2023-07-01T18:30:14 EDT" duration-ms="808" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[shirt]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-01T18:30:14 EDT" name="tearDown" finished-at="2023-07-01T18:30:14 EDT" duration-ms="50" status="PASS">
+        </test-method> <!-- appLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ecommerce.tests.LoginPageTest@7164ca4c]" started-at="2023-07-05T12:47:04 EDT" name="tearDown" finished-at="2023-07-05T12:47:04 EDT" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.ecommerce.tests.HomePageTest -->
-    </test> <!-- E-Commerce Home Page Test -->
-    <test started-at="2023-07-01T18:30:04 EDT" name="E-Commerce Login Page Test" finished-at="2023-07-01T18:30:15 EDT" duration-ms="10810">
+      </class> <!-- com.qa.ecommerce.tests.LoginPageTest -->
+    </test> <!-- E-Commerce Login Page Test_edge -->
+    <test started-at="2023-07-05T12:46:53 EDT" name="E-Commerce Login Page Test_firefox" finished-at="2023-07-05T12:47:08 EDT" duration-ms="15408">
       <class name="com.qa.ecommerce.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.ecommerce.tests.LoginPageTest@5f9be66c]" started-at="2023-07-01T18:30:04 EDT" name="setup" finished-at="2023-07-01T18:30:11 EDT" duration-ms="6866" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.LoginPageTest@19c65cdc]" started-at="2023-07-05T12:46:53 EDT" name="setup" finished-at="2023-07-05T12:47:07 EDT" duration-ms="13654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginPageNavigationTest()[pri:1, instance:com.qa.ecommerce.tests.LoginPageTest@5f9be66c]" started-at="2023-07-01T18:30:11 EDT" name="loginPageNavigationTest" finished-at="2023-07-01T18:30:12 EDT" duration-ms="1300" status="FAIL">
+        <test-method signature="loginPageNavigationTest()[pri:1, instance:com.qa.ecommerce.tests.LoginPageTest@19c65cdc]" started-at="2023-07-05T12:47:07 EDT" name="loginPageNavigationTest" finished-at="2023-07-05T12:47:07 EDT" duration-ms="584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageNavigationTest -->
+        <test-method signature="forgotPwdLinkExistTest()[pri:2, instance:com.qa.ecommerce.tests.LoginPageTest@19c65cdc]" started-at="2023-07-05T12:47:07 EDT" name="forgotPwdLinkExistTest" finished-at="2023-07-05T12:47:07 EDT" duration-ms="35" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [My account – Live Store789] but found [My account – Live Store]]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [My account – Live Store789] but found [My account – Live Store]
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.qa.ecommerce.tests.LoginPageTest.loginPageNavigationTest(LoginPageTest.java:16)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.qa.ecommerce.tests.LoginPageTest.forgotPwdLinkExistTest(LoginPageTest.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -106,20 +93,136 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageNavigationTest -->
-        <test-method signature="forgotPwdLinkExistTest()[pri:2, instance:com.qa.ecommerce.tests.LoginPageTest@5f9be66c]" started-at="2023-07-01T18:30:13 EDT" name="forgotPwdLinkExistTest" finished-at="2023-07-01T18:30:14 EDT" duration-ms="824" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- forgotPwdLinkExistTest -->
-        <test-method signature="appLoginTest()[pri:3, instance:com.qa.ecommerce.tests.LoginPageTest@5f9be66c]" started-at="2023-07-01T18:30:14 EDT" name="appLoginTest" finished-at="2023-07-01T18:30:15 EDT" duration-ms="1483" status="PASS">
+        <test-method signature="appLoginTest()[pri:3, instance:com.qa.ecommerce.tests.LoginPageTest@19c65cdc]" started-at="2023-07-05T12:47:07 EDT" name="appLoginTest" finished-at="2023-07-05T12:47:08 EDT" duration-ms="982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ecommerce.tests.LoginPageTest@5f9be66c]" started-at="2023-07-01T18:30:15 EDT" name="tearDown" finished-at="2023-07-01T18:30:15 EDT" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ecommerce.tests.LoginPageTest@19c65cdc]" started-at="2023-07-05T12:47:08 EDT" name="tearDown" finished-at="2023-07-05T12:47:08 EDT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.ecommerce.tests.LoginPageTest -->
-    </test> <!-- E-Commerce Login Page Test -->
+    </test> <!-- E-Commerce Login Page Test_firefox -->
+    <test started-at="2023-07-05T12:46:53 EDT" name="E-Commerce Home Page Test_chrome" finished-at="2023-07-05T12:47:20 EDT" duration-ms="26794">
+      <class name="com.qa.ecommerce.tests.HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@455b6df1]" started-at="2023-07-05T12:46:53 EDT" name="setup" finished-at="2023-07-05T12:47:03 EDT" duration-ms="10193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@455b6df1]" started-at="2023-07-05T12:47:03 EDT" name="homePageTitleTest" finished-at="2023-07-05T12:47:03 EDT" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method signature="homePageURLTest()[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@455b6df1]" started-at="2023-07-05T12:47:03 EDT" name="homePageURLTest" finished-at="2023-07-05T12:47:03 EDT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageURLTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@455b6df1]" started-at="2023-07-05T12:47:03 EDT" name="searchTest" data-provider="getProductData" finished-at="2023-07-05T12:47:09 EDT" duration-ms="5533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Macbook]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@455b6df1]" started-at="2023-07-05T12:47:09 EDT" name="searchTest" data-provider="getProductData" finished-at="2023-07-05T12:47:14 EDT" duration-ms="5462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@455b6df1]" started-at="2023-07-05T12:47:14 EDT" name="searchTest" data-provider="getProductData" finished-at="2023-07-05T12:47:20 EDT" duration-ms="5543" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samsung]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@455b6df1]" started-at="2023-07-05T12:47:20 EDT" name="tearDown" finished-at="2023-07-05T12:47:20 EDT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.ecommerce.tests.HomePageTest -->
+    </test> <!-- E-Commerce Home Page Test_chrome -->
+    <test started-at="2023-07-05T12:46:53 EDT" name="E-Commerce Home Page Test_chromium" finished-at="2023-07-05T12:47:23 EDT" duration-ms="29871">
+      <class name="com.qa.ecommerce.tests.HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-05T12:46:53 EDT" name="setup" finished-at="2023-07-05T12:47:06 EDT" duration-ms="13289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-05T12:47:06 EDT" name="homePageTitleTest" finished-at="2023-07-05T12:47:06 EDT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method signature="homePageURLTest()[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-05T12:47:06 EDT" name="homePageURLTest" finished-at="2023-07-05T12:47:06 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageURLTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-05T12:47:06 EDT" name="searchTest" data-provider="getProductData" finished-at="2023-07-05T12:47:12 EDT" duration-ms="5512" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Macbook]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-05T12:47:12 EDT" name="searchTest" data-provider="getProductData" finished-at="2023-07-05T12:47:17 EDT" duration-ms="5572" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-05T12:47:17 EDT" name="searchTest" data-provider="getProductData" finished-at="2023-07-05T12:47:23 EDT" duration-ms="5464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samsung]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.ecommerce.tests.HomePageTest@6239aba6]" started-at="2023-07-05T12:47:23 EDT" name="tearDown" finished-at="2023-07-05T12:47:23 EDT" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.ecommerce.tests.HomePageTest -->
+    </test> <!-- E-Commerce Home Page Test_chromium -->
   </suite> <!-- E-Commerce Test Regression Playwright Suite -->
 </testng-results>

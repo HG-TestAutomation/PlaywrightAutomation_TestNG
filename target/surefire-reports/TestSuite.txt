@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 23.683 s <<< FAILURE! - in TestSuite
+homePageTitleTest(com.qa.ecommerce.tests.HomePageTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.qa.ecommerce.pages.HomePage.getHomePageTitle()" because "this.homePage" is null
+	at com.qa.ecommerce.tests.HomePageTest.homePageTitleTest(HomePageTest.java:14)
+
+homePageURLTest(com.qa.ecommerce.tests.HomePageTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.qa.ecommerce.pages.HomePage.getHomePageURL()" because "this.homePage" is null
+	at com.qa.ecommerce.tests.HomePageTest.homePageURLTest(HomePageTest.java:20)
+
+searchTest(com.qa.ecommerce.tests.HomePageTest)  Time elapsed: 5.01 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.qa.ecommerce.pages.HomePage.doSearch(String)" because "this.homePage" is null
+	at com.qa.ecommerce.tests.HomePageTest.searchTest(HomePageTest.java:36)
+
+searchTest(com.qa.ecommerce.tests.HomePageTest)  Time elapsed: 5.009 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.qa.ecommerce.pages.HomePage.doSearch(String)" because "this.homePage" is null
+	at com.qa.ecommerce.tests.HomePageTest.searchTest(HomePageTest.java:36)
+
+searchTest(com.qa.ecommerce.tests.HomePageTest)  Time elapsed: 5.013 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.qa.ecommerce.pages.HomePage.doSearch(String)" because "this.homePage" is null
+	at com.qa.ecommerce.tests.HomePageTest.searchTest(HomePageTest.java:36)
+
+loginPageNavigationTest(com.qa.ecommerce.tests.LoginPageTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.qa.ecommerce.pages.HomePage.navigateToLoginPage()" because "this.homePage" is null
+	at com.qa.ecommerce.tests.LoginPageTest.loginPageNavigationTest(LoginPageTest.java:13)
+
+forgotPwdLinkExistTest(com.qa.ecommerce.tests.LoginPageTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.qa.ecommerce.pages.LoginPage.isForgotPwdLinkExist()" because "this.loginPage" is null
+	at com.qa.ecommerce.tests.LoginPageTest.forgotPwdLinkExistTest(LoginPageTest.java:21)
+
+appLoginTest(com.qa.ecommerce.tests.LoginPageTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
+	at com.qa.ecommerce.tests.LoginPageTest.appLoginTest(LoginPageTest.java:26)
+

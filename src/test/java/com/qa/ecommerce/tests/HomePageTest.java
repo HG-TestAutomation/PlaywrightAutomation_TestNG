@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.qa.ecommerce.base.BaseTest;
 import com.qa.ecommerce.constants.AppConstants;
 
-public class HomePageTest extends BaseTest{
+public class HomePageTest extends BaseTest {
 
 	@Test
 	public void homePageTitleTest() {
@@ -16,25 +16,25 @@ public class HomePageTest extends BaseTest{
 	}
 
 	@Test
-	public void homePageUrlTest() {
-		String actualUrl = homePage.getHomePageUrl();
-		Assert.assertEquals(actualUrl, prop.getProperty("url"));
+	public void homePageURLTest() {
+		String actualURL = homePage.getHomePageURL();
+		Assert.assertEquals(actualURL, prop.getProperty("url"));
 	}
-	
+
 	@DataProvider
-	public Object [][] getProductData() {
+	public Object[][] getProductData() {
 		return new Object[][] {
-			{"beanie"},
-			{"logo"},
-			{"shirt"}
+				{ "Macbook" }, 
+				{ "iMac" }, 
+				{ "Samsung" }
 		};
 	}
 
 	@Test(dataProvider = "getProductData")
-	public void searchTest(String productName) {
+	public void searchTest(String productName) throws InterruptedException {
+		Thread.sleep(5000);
 		String actualSearchHeader = homePage.doSearch(productName);
-		Assert.assertEquals(actualSearchHeader, "Search results: “"+productName+"”");
+		Assert.assertEquals(actualSearchHeader, "Search - " + productName);
 	}
 
-	
 }

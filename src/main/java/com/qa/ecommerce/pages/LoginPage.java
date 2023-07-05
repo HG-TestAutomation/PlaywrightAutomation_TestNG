@@ -1,48 +1,44 @@
 package com.qa.ecommerce.pages;
 
-import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
 public class LoginPage {
+
+	private Page page;
+
+	// 1. String Locators - OR
+	private String emailId = "//input[@id='input-email']";
+	private String password = "//input[@id='input-password']";
+	private String loginBtn = "//input[@value='Login']";
+	private String forgotPwdLink = "//div[@class='form-group']//a[normalize-space()='Forgotten Password']";
+	private String logoutLink = "//a[@class='list-group-item'][normalize-space()='Logout']";
+
+	// 2. page constructor:
+	public LoginPage(Page page) {
+		this.page = page;
+	}
 	
-	   private Page page;
-	     
-	    private final Locator USERNAME_EDITBOX;
-	    private final Locator PASSWORD_EDITBOX;
-	    private final Locator LOGIN_BTN;
-	    private final Locator FORGOT_PW_LINK;
-	    private final Locator GREETING_TITLE;
-	    
-
-	    public LoginPage(Page page) {
-	        this.page = page;
-	        this.USERNAME_EDITBOX = page.getByLabel("Username or email address *");
-	        this.PASSWORD_EDITBOX = page.locator("#password");
-	        this.LOGIN_BTN = page.locator("//button[normalize-space()='Log in']");
-	        this.FORGOT_PW_LINK = page.locator("//a[normalize-space()='Lost your password?']");
-	        this.GREETING_TITLE = page.locator("//body/div[@id='wpadminbar']/div[@id='wp-toolbar']/ul[@id='wp-admin-bar-top-secondary']/li[@id='wp-admin-bar-my-account']/a[1]");
-	        
-	         
-	    }
-	    
-	    public String getLoginPageTitle() {
-	    	return page.title();
-	    }
-	    
-	    public boolean doesForgotPwdExist() {
-	    	return FORGOT_PW_LINK.isVisible();
-	    }
-	    
-	    public boolean doLogin(String appUsername, String appPassword) {
-	    	System.out.println("App credentials: "+ appUsername + ":" + appPassword);
-	    	USERNAME_EDITBOX.fill(appUsername);
-	    	PASSWORD_EDITBOX.fill(appPassword);
-	    	LOGIN_BTN.click();
-	    	if(GREETING_TITLE.isVisible()) {
-	    		System.out.println("user logged in successfully");
-	    		return true;
-	    	}
-	    	return false;
-	    }
-
+	// 3. page actions/methods:
+	public String getLoginPageTitle() {
+		return page.title();
+	}
+	
+	public boolean isForgotPwdLinkExist() {
+		return page.isVisible(forgotPwdLink);
+	}
+	
+	public boolean doLogin(String appUserName, String appPassword) {
+		System.out.println("App creds: " + appUserName + " : " + appPassword);
+		page.fill(emailId, appUserName);
+		page.fill(password, appPassword);
+		page.click(loginBtn);
+		page.locator(logoutLink).waitFor();
+		if(page.locator(logoutLink).isVisible()) {
+			System.out.println("user is logged in successfully....");
+			return true;
+		}else {
+			System.out.println("user is not logged in successfully....");
+			return false;
+		}
+	}
 }

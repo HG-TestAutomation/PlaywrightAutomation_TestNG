@@ -6,25 +6,24 @@ import org.testng.annotations.Test;
 import com.qa.ecommerce.base.BaseTest;
 import com.qa.ecommerce.constants.AppConstants;
 
-public class LoginPageTest extends BaseTest{
-	
-	@Test(priority =1)
+public class LoginPageTest extends BaseTest {
+
+	@Test(priority = 1)
 	public void loginPageNavigationTest() {
-		loginPage = homePage.clickMyAccountLink();
-		String actualLoginPageTitle = loginPage.getLoginPageTitle();
-		System.out.println("page actual title: " + actualLoginPageTitle);
-		Assert.assertEquals(actualLoginPageTitle, AppConstants.LOGIN_PAGE_TITLE);
+		loginPage = homePage.navigateToLoginPage();
+		String actLoginPageTitle = loginPage.getLoginPageTitle();
+		System.out.println("page act title: " + actLoginPageTitle);
+		Assert.assertEquals(actLoginPageTitle, AppConstants.LOGIN_PAGE_TITLE);
 	}
-	
-	@Test(priority =2)
+
+	@Test(priority = 2)
 	public void forgotPwdLinkExistTest() {
-		loginPage = homePage.clickMyAccountLink();
-		Assert.assertTrue(loginPage.doesForgotPwdExist());	
+		Assert.assertTrue(loginPage.isForgotPwdLinkExist());
 	}
-	@Test(priority =3)
+
+	@Test(priority = 3)
 	public void appLoginTest() {
 		Assert.assertTrue(loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim()));
-		
 	}
 
 }
